@@ -21,8 +21,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define MW_H
 
 #include <QMainWindow>
-#include "dice.h"
-#include "player.h"
+#include "src/dice.h"
+#include "src/player.h"
 
 namespace Ui {
 class mw;

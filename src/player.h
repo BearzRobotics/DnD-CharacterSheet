@@ -20,6 +20,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef PLAYER_H
 #define PLAYER_H
 #include <QDialog>
+#include <QFileDialog>
+#include <QDebug>
 
 namespace Ui {
   class Player;
@@ -40,9 +42,11 @@ public:
 
 
    // set of functions for loading and saving characters.
-   void loadPlayer(QString fileName);
+   void loadPlayer();
    void savePlayer(QString name, QString playerClass, QString alignment, QString playersRace, QString playersSubRace, QString background, QString BackgroundText, QString hitDice, QString dugeonPack, int experience, short level, short initative, short armorClass, short speed, short Proficiency, short hp, short strenght, short intelligence, short dexterity, short wisdom, short constitution, short charisma);
    void resetPlayer(); // resets the player data
+
+   QString filePath = "";
 
    // Probaly not the best choice, but
    // Hey it works for now.

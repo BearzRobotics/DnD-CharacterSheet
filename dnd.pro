@@ -60,8 +60,6 @@ FORMS += \
     src/dice.ui \
     src/player.ui
 
-
-
 RESOURCES += \
     res.qrc
 

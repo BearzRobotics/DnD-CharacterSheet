@@ -211,17 +211,31 @@ void Player::savePlayer(QString name, QString playerClass, QString alignment, QS
                         QString background, QString BackgroundText, QString hitDice, QString dugeonPack, int experience, short level, short initative,
                         short armorClass, short speed, short Proficiency, short hp, short strenght, short intelligence,
                         short dexterity, short wisdom, short constitution, short charisma){
-  QFile file(name  + ".dat");
+  QString fileName = QFileDialog::getSaveFileName(this,
+                                                    tr("Save Player"), "",
+                                                    tr("Player File(*.dat)"));
+  QFile file(fileName + ".dnd");
+
  file.open(QIODevice::WriteOnly);
  QDataStream out(&file);
  out.setVersion(QDataStream::Qt_5_9);
  out << name << playerClass << alignment << playersRace << playersSubRace << background << BackgroundText << hitDice << dugeonPack << experience << level << initative << armorClass << speed << Proficiency << hp << strenght << intelligence << dexterity << wisdom << constitution << charisma;
 }
 
-void Player::loadPlayer(QString fileName){
+void Player::loadPlayer(){
 
-  QFile file(fileName + ".dat");
-  file.open(QIODevice::ReadOnly);
+  QString fileName = QFileDialog::getOpenFileName(this,
+                                                  "Open Player File",
+                                                  QDir::currentPath(),
+                                                  "Player Files (*.dat, *.dnd)");
+  QFile file(fileName);
+
+  if (!file.open(QIODevice::ReadOnly)){
+        qDebug() << "Couldn't open file";
+        file.errorString();
+      return;
+  }
+
   QDataStream in(&file);
   in.setVersion(QDataStream::Qt_5_9);
   in >> name >> playerClass >> alignment >> playersRace >> playersSubRace >> Background >> BackgroundText >> hitDice >> dugeonPack >> experience >> level >> initative >> armorClass >> speed >> Proficiency >> hp >> strenght >> intelligence >> dexterity >> wisdom >> constitution >> charisma;

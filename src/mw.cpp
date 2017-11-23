@@ -153,6 +153,6 @@ void mw::on_bt_save_clicked()
 
 void mw::on_bt_open_clicked()
 {
-  player->loadPlayer("Dakota");
+  player->loadPlayer();
   statUpdate();
 }
