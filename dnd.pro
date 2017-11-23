@@ -22,8 +22,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
-QT += quick
+QT += core gui
 CONFIG += c++11
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
@@ -44,22 +43,22 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += \
-        main.cpp \
-        mw.cpp \
-    map.cpp \
-    dice.cpp \
-    player.cpp
+        src/main.cpp \
+        src/mw.cpp \
+    src/map.cpp \
+    src/dice.cpp \
+    src/player.cpp
 
 HEADERS += \
-        mw.h \
-    map.h \
-    dice.h \
-    player.h
+        src/mw.h \
+    src/map.h \
+    src/dice.h \
+    src/player.h
 
 FORMS += \
-        mw.ui \
-    dice.ui \
-    player.ui
+        src/mw.ui \
+    src/dice.ui \
+    src/player.ui
 
 
 
