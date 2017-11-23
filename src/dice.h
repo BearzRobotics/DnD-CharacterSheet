@@ -48,6 +48,7 @@ private slots:
 
 private:
   Ui::dice *ui;
+  int added_rolls;
   int lastRoll;
   int TotalRolls;
   int totalScore;

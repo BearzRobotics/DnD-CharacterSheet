@@ -6,14 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>238</width>
+    <width>194</width>
     <height>389</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>238</width>
-    <height>389</height>
+    <width>0</width>
+    <height>0</height>
    </size>
   </property>
   <property name="maximumSize">
@@ -30,9 +30,15 @@
     <rect>
      <x>140</x>
      <y>350</y>
-     <width>96</width>
+     <width>50</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
    </property>
    <property name="text">
     <string>clear</string>
@@ -41,11 +47,17 @@
   <widget class="QPushButton" name="bt_exit">
    <property name="geometry">
     <rect>
-     <x>40</x>
+     <x>90</x>
      <y>350</y>
-     <width>96</width>
+     <width>50</width>
      <height>34</height>
     </rect>
+   </property>
+   <property name="maximumSize">
+    <size>
+     <width>50</width>
+     <height>16777215</height>
+    </size>
    </property>
    <property name="text">
     <string>Exit</string>
@@ -56,7 +68,7 @@
     <rect>
      <x>0</x>
      <y>10</y>
-     <width>231</width>
+     <width>191</width>
      <height>331</height>
     </rect>
    </property>
@@ -64,10 +76,32 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout">
       <item>
-       <widget class="QSpinBox" name="sp_d2"/>
+       <widget class="QSpinBox" name="sp_d2">
+        <property name="minimumSize">
+         <size>
+          <width>30</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="bt_d2">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>d2</string>
         </property>
@@ -97,10 +131,26 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_2">
       <item>
-       <widget class="QSpinBox" name="sp_d4"/>
+       <widget class="QSpinBox" name="sp_d4">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="bt_d4">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>d4</string>
         </property>
@@ -130,10 +180,26 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_3">
       <item>
-       <widget class="QSpinBox" name="sp_d6"/>
+       <widget class="QSpinBox" name="sp_d6">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="bt_d6">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>d6</string>
         </property>
@@ -163,10 +229,26 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_4">
       <item>
-       <widget class="QSpinBox" name="sp_d10"/>
+       <widget class="QSpinBox" name="sp_d10">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="bt_d10">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>d10</string>
         </property>
@@ -196,10 +278,26 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_5">
       <item>
-       <widget class="QSpinBox" name="sp_d12"/>
+       <widget class="QSpinBox" name="sp_d12">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="bt_d12">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>d12</string>
         </property>
@@ -229,10 +327,26 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_6">
       <item>
-       <widget class="QSpinBox" name="sp_d20"/>
+       <widget class="QSpinBox" name="sp_d20">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="bt_d20">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>d20</string>
         </property>
@@ -262,10 +376,26 @@
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_7">
       <item>
-       <widget class="QSpinBox" name="sp_d100"/>
+       <widget class="QSpinBox" name="sp_d100">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <property name="minimum">
+         <number>1</number>
+        </property>
+       </widget>
       </item>
       <item>
        <widget class="QPushButton" name="bt_d100">
+        <property name="maximumSize">
+         <size>
+          <width>50</width>
+          <height>16777215</height>
+         </size>
+        </property>
         <property name="text">
          <string>d100</string>
         </property>

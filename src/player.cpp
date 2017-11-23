@@ -224,10 +224,7 @@ void Player::savePlayer(QString name, QString playerClass, QString alignment, QS
 
 void Player::loadPlayer(){
 
-  QString fileName = QFileDialog::getOpenFileName(this,
-                                                  "Open Player File",
-                                                  QDir::currentPath(),
-                                                  "Player Files (*.dat, *.dnd)");
+  QString fileName = QFileDialog::getOpenFileName(this, "Open Player File", QDir::currentPath(), "Player Files (*.dat, *.dnd)");
   QFile file(fileName);
 
   if (!file.open(QIODevice::ReadOnly)){
@@ -239,7 +236,6 @@ void Player::loadPlayer(){
   QDataStream in(&file);
   in.setVersion(QDataStream::Qt_5_9);
   in >> name >> playerClass >> alignment >> playersRace >> playersSubRace >> Background >> BackgroundText >> hitDice >> dugeonPack >> experience >> level >> initative >> armorClass >> speed >> Proficiency >> hp >> strenght >> intelligence >> dexterity >> wisdom >> constitution >> charisma;
-
 }
 
 void Player::resetPlayer(){
