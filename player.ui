@@ -1,0 +1,1002 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Player</class>
+ <widget class="QDialog" name="Player">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>410</width>
+    <height>384</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>410</width>
+    <height>354</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>410</width>
+    <height>384</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="bt_genStats">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>10</y>
+     <width>96</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Gen Stats</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lb_equipment">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>200</y>
+     <width>81</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Equipment</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>140</y>
+     <width>149</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_15">
+    <item>
+     <widget class="QPushButton" name="bt_rollHp">
+      <property name="text">
+       <string>Roll Hp</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_14">
+      <item>
+       <widget class="QLabel" name="lb_hitPoints">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="buddy">
+         <cstring>bt_rollHp</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="vlb_hitPoints">
+        <property name="minimumSize">
+         <size>
+          <width>40</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>40</y>
+     <width>153</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLabel" name="lb_race">
+      <property name="text">
+       <string>Race</string>
+      </property>
+      <property name="buddy">
+       <cstring>cb_race</cstring>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cb_race">
+      <item>
+       <property name="text">
+        <string>Aarakocra</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Aasimar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bugbear</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Dwarf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Elf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Firbolg</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Genasi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gnome</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Goblin</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Goliath</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Half-Elf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Half-Orc</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Halfling</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hobgoblin</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Human</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kenku</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kobold</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lizardfolk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Orc</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Serpenthblood</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tabaxi</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Tiefling</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Triton</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Turtle</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>130</y>
+     <width>255</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_3">
+    <item>
+     <widget class="QLabel" name="lb_background">
+      <property name="text">
+       <string>Background</string>
+      </property>
+      <property name="buddy">
+       <cstring>cb_background</cstring>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cb_background">
+      <item>
+       <property name="text">
+        <string>Acolyte</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Barbarian Tribe Member</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Charlatan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>City Watch</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Clan Crafter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cloistered Scholar</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Courtier</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Criminal</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Entertainer</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Faction Agent</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Far Traveler</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Folk Hero</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Guild Artisan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Haunted One</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hermit</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Inheritor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Knight</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mercenary Veteran</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Noble</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Outlander</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Port City Noble</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sage</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sailor</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Soldier</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Urban Bounty Hunter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Urchin</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>70</y>
+     <width>211</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_4">
+    <item>
+     <widget class="QLabel" name="lb_subRace">
+      <property name="text">
+       <string>Sub Race</string>
+      </property>
+      <property name="buddy">
+       <cstring>cb_subRace</cstring>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cb_subRace">
+      <item>
+       <property name="text">
+        <string>None</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Forest Gnome</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Mountain Dwarf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rock Gnome</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Stout Halfling</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>High Elf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wood Elf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Hill Dwarf</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lightfoot Halfling</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Black Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Blue Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Brass Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bronze Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Copper Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Gold Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Green Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Red Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Silver Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>White Dragonborn</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Drow</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>100</y>
+     <width>123</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_2">
+    <item>
+     <widget class="QLabel" name="lb_class">
+      <property name="text">
+       <string>Class</string>
+      </property>
+      <property name="buddy">
+       <cstring>cb_class</cstring>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cb_class">
+      <item>
+       <property name="text">
+        <string>Barbarian</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Bard</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Cleric</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Druid</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Fighter</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Monk</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Paladin</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ranger</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Rogue</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sorcerer</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Warlock</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Wizard</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>50</y>
+     <width>135</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_11">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <item>
+         <widget class="QLabel" name="lb_Str">
+          <property name="text">
+           <string>Str</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="vlb_Str">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_8">
+        <item>
+         <widget class="QLabel" name="lb_Int">
+          <property name="text">
+           <string>Int</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="vlb_Int">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_12">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_6">
+        <item>
+         <widget class="QLabel" name="lb_Dex">
+          <property name="text">
+           <string>Dex</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="vlb_Dex">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_9">
+        <item>
+         <widget class="QLabel" name="lb_Wis">
+          <property name="text">
+           <string>Wis</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="vlb_Wis">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_13">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_7">
+        <item>
+         <widget class="QLabel" name="lb_Con">
+          <property name="text">
+           <string>Con</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="vlb_Con">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_10">
+        <item>
+         <widget class="QLabel" name="lb_Cha">
+          <property name="text">
+           <string>Cha</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="vlb_Cha">
+          <property name="minimumSize">
+           <size>
+            <width>30</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>220</y>
+     <width>164</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_2">
+    <item>
+     <widget class="QLabel" name="lb_select">
+      <property name="text">
+       <string>Select:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_greataxe">
+      <property name="text">
+       <string>Greataxe</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_martialWeapon">
+      <property name="text">
+       <string>Martial Melle weapon</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bt_cMartialWeapon">
+      <property name="text">
+       <string>Chose Martial weapon</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>220</x>
+     <y>220</y>
+     <width>161</width>
+     <height>118</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <widget class="QLabel" name="lb_select_2">
+      <property name="text">
+       <string>Select:</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_handAxe">
+      <property name="text">
+       <string>HandAxe(2)</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="rb_simpleWeapon">
+      <property name="text">
+       <string>Simple weapon</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bt_cSimpleWeapon">
+      <property name="text">
+       <string>Chose Simple weapon</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>340</y>
+     <width>302</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_17">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_16">
+      <item>
+       <widget class="QLabel" name="lb_choosDP">
+        <property name="text">
+         <string>Choice Dugeon Pack</string>
+        </property>
+        <property name="buddy">
+         <cstring>cb_DugeonPack</cstring>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="cb_DugeonPack"/>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QPushButton" name="bt_done">
+      <property name="text">
+       <string>Done</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>187</width>
+     <height>36</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_18">
+    <item>
+     <widget class="QLabel" name="lb_name">
+      <property name="text">
+       <string>Name: </string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QLineEdit" name="le_name"/>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>160</y>
+     <width>241</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout_19">
+    <item>
+     <widget class="QLabel" name="lb_alignment">
+      <property name="minimumSize">
+       <size>
+        <width>60</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Alignment</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QComboBox" name="cb_alignment">
+      <item>
+       <property name="text">
+        <string>Lawful Good</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Neutral Good</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chaotic Good</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lawful Neutral</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Neutral</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chaotic Neutral</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Lawful Evil</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Neutral Evil</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Chaotic Evil</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
